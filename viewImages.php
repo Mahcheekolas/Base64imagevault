@@ -12,6 +12,8 @@ $start_from = ($page-1) * $results_per_page;
  $result = mysqli_query($con,$sql);
  $row = mysqli_fetch_array($result);
 
+ echo '<style> img { width:100%; height:100%; object-fit:cover; } </style>';
+
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)):
 
 		$code_base64 = $row['imageBase64'];
@@ -21,11 +23,10 @@ $start_from = ($page-1) * $results_per_page;
 		$code_base64 = str_replace($getimgtype,'',$code_base64);
 		$code_binary = base64_decode($code_base64);
 		$image= imagecreatefromstring($code_binary);
-		
-		echo '<style> img { width:100%; height:100%; object-fit:cover; } </style>';
+	
 		echo '<p><div style="max-width: 200px !important;height: 200px !important;"><img src="data:image/jpg;base64,' . $code_base64 . '" /></div>';
 
-		//todo : add remaining info fields, cascade results on page, create link to provide image in full side outside 200x200 div
+		//todo : add remaining info fields, cascade results on page, create link to provide image in full size outside 200x200 div
 
 	endwhile;
 
