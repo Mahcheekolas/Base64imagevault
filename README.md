@@ -5,7 +5,7 @@ Currently improving on the paged results viewer which decodes the images back fr
 
 Getting Started
 
-1. Execute db.sql against a msql database
+1. Execute db.sql against a mysql database
 2. Update user and password values is config.php
 3. Upload all files to a web directory.
 4. Create an uploads/ directory. (For capturing a hard copy of the upload prior to base64 extraction)
