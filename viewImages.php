@@ -25,7 +25,7 @@ $start_from = ($page-1) * $results_per_page;
 		echo '<style> img { width:100%; height:100%; object-fit:cover; } </style>';
 		echo '<p><div style="max-width: 200px !important;height: 200px !important;"><img src="data:image/jpg;base64,' . $code_base64 . '" /></div>';
 
-		//todo : add remaining info fields, cascade results on page, create link to provide image in full side outside 200x200 dic
+		//todo : add remaining info fields, cascade results on page, create link to provide image in full side outside 200x200 div
 
 	endwhile;
 
