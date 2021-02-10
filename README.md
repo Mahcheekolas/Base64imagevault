@@ -9,4 +9,4 @@ Getting Started
 2. Update user and password values in config.php
 3. Upload all php and html files to a web directory (exclude db.sql and Readme.md in this branch).
 4. Create an uploads/ directory. (For capturing a hard copy of the upload prior to base64 extraction)
-5. Access index.html or uploadFiles.php to being building your datastore of base64 image data.
+5. Access index.html or uploadImages.php to being building your datastore of base64 image data.
